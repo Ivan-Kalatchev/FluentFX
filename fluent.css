@@ -1,0 +1,86 @@
+.button{
+    -fx-background-color:  #c7c7c7;
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+}
+
+.button:default{
+    -fx-background-color:  #0078D7;
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+}
+
+.button:default:hover {
+    -fx-border-width: 0.17em;
+    -fx-border-color: #0099BC;
+}
+
+.button:default:focused {
+    -fx-border-width: 0.17em;
+    -fx-border-color: #0099BC;
+}
+
+.button:default:pressed {
+    -fx-background-color:  #0099BC;
+    -fx-scale-y: 0.99;
+    -fx-scale-x: 0.99;
+}
+
+.button:hover {
+    -fx-border-width: 0.17em;
+    -fx-border-color: #7a7a7a;
+}
+
+.button:focused {
+    -fx-border-width: 0.17em;
+    -fx-border-color: #7a7a7a;
+}
+
+.button:pressed {
+    -fx-background-color:  #7a7a7a;
+    -fx-scale-y: 0.99;
+    -fx-scale-x: 0.99;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-radius: 0em;
+    -fx-background-radius: 0em;
+    -fx-border-width: 0.17em;
+    -fx-border-color: #7a7a7a;
+}
+
+.check-box {
+    
+}
+
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: #7a7a7a;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: white;
+    -fx-border-width: 0.1em;
+    -fx-border-color: #7a7a7a;
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: white;
+}
+
+.sidebar {
+    -fx-background-color: #cacaca;
+    -fx-min-height: 100%;
+}
+
+.tabS {
+    -fx-border-width: 0em !important;
+}
+
+.tabSCur {
+    -fx-background-color:  #afafaf;
+}
