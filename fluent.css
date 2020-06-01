@@ -1,94 +1,122 @@
-.button{
-    -fx-background-color:  #c7c7c7;
-    -fx-border-radius: 0em;
-    -fx-background-radius: 0em;
-    -fx-min-height: 31;
+.button {
+  -fx-background-color: #c7c7c7;
+  -fx-border-radius: 3;
 }
 
-.button:default{
-    -fx-background-color:  #0078D7;
-    -fx-border-radius: 0em;
-    -fx-background-radius: 0em;
-    -fx-min-height: 31;
+.button:default {
+  -fx-background-color: rgb(58, 166, 255);
+  -fx-border-radius: 3;
 }
 
 .button:default:hover {
-    -fx-border-width: 0.17em;
-    -fx-border-color: #0099BC;
-    -fx-min-height: 31;
+  -fx-border-radius: 3;
 }
 
 .button:default:focused {
-    -fx-border-width: 0.17em;
-    -fx-border-color: #0099BC;
-    -fx-min-height: 31;
+  -fx-border-color: #0099bc;
+  -fx-border-radius: 3;
 }
 
 .button:default:pressed {
-    -fx-background-color:  #7a7a7a;
-    -fx-scale-y: 0.99;
-    -fx-scale-x: 0.99;
-    -fx-min-height: 31;
+  -fx-background-color: #7a7a7a;
+  -fx-scale-y: 0.99;
+  -fx-scale-x: 0.99;
+  -fx-border-radius: 3;
 }
 
 .button:hover {
-    -fx-border-width: 0.17em;
-    -fx-border-color: #7a7a7a;
-    -fx-min-height: 31;
+  -fx-background-color: #9c9c9c;
+  -fx-border-radius: 3;
 }
 
 .button:focused {
-    -fx-border-width: 0.17em;
-    -fx-border-color: #7a7a7a;
-    -fx-min-height: 31;
+  -fx-background-color: #9c9c9c;
+  -fx-border-radius: 3;
 }
 
 .button:pressed {
-    -fx-background-color:  #7a7a7a;
-    -fx-scale-y: 0.99;
-    -fx-scale-x: 0.99;
-    -fx-min-height: 31;
+  -fx-background-color: #5e5e5e;
+  -fx-scale-y: 0.99;
+  -fx-scale-x: 0.99;
+  -fx-border-radius: 3;
 }
 
 .text-field {
-    -fx-background-color: white;
-    -fx-border-radius: 0em;
-    -fx-background-radius: 0em;
-    -fx-border-width: 0.17em;
-    -fx-border-color: #7a7a7a;
+  -fx-background-color: white;
+  -fx-border-color: #7a7a7a;
+  -fx-border-radius: 3;
+}
+
+.text-field:focused {
+  -fx-border-color: #000000;
 }
 
 .check-box {
-    
+  -fx-border-radius: 3;
 }
 
 .check-box:selected > .box {
-    /* background color for selected checkbox */
-    -fx-background-color: #7a7a7a;
+  /* background color for selected checkbox */
+  -fx-background-color: #7a7a7a;
 }
 
 .check-box > .box {
-    /* background color of unselected checkbox */
-    -fx-background-color: white;
-    -fx-border-width: 0.1em;
-    -fx-border-color: #7a7a7a;
+  /* background color of unselected checkbox */
+  -fx-background-color: white;
+  -fx-border-width: 0.1em;
+  -fx-border-color: #7a7a7a;
+  -fx-border-radius: 3;
 }
 
 .check-box:selected > .box > .mark,
-.check-box:indeterminate  > .box > .mark {
-    /* modify mark color */
-    -fx-background-color: white;
+.check-box:indeterminate > .box > .mark {
+  /* modify mark color */
+  -fx-background-color: white;
 }
 
 .sidebar {
-    -fx-background-color: #cacaca;
-    -fx-min-height: 100%;
+  -fx-background-color: #cacaca;
+  -fx-min-height: 100%;
 }
 
 .tabS {
-    -fx-border-width: 0em !important;
+  -fx-border-width: 0em !important;
 }
 
 .tabSCur {
-    -fx-background-color:  #afafaf;
+  -fx-background-color: #afafaf;
+}
+
+.combo-box {
+  -fx-background-color: white;
+  -fx-border-width: 0.1em;
+  -fx-border-color: #7a7a7a;
+  -fx-border-radius: 3;
+}
+
+.toggle-button {
+  -fx-background-color: #c7c7c7;
+  -fx-border-radius: 3;
+}
+
+.toggle-button:selected {
+  -fx-background-color: #a7a7a7;
+}
+
+.slider > .track {
+  -fx-background-color: #c7c7c7;
+}
+
+.slider > .thumb {
+  -fx-background-color: #a7a7a7;
+}
+
+.date-picker .arrow-button {
+  -fx-background-color: #c7c7c7;
+  -fx-border-radius: 3;
+}
+
+.date-picker .arrow-button {
+  -fx-background-color: #c7c7c7;
+  -fx-border-radius: 3;
 }
