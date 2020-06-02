@@ -120,3 +120,62 @@
   -fx-background-color: #c7c7c7;
   -fx-border-radius: 3;
 }
+
+.tab-pane .tab-header-area .tab-header-background {
+  -fx-opacity: 0;
+}
+
+.tab-pane {
+  -fx-tab-min-width: 90px;
+  -fx-background-color: white;
+}
+.tab-pane .tab-header-area {
+  -fx-background-color: #dbdbdb;
+}
+
+.tab {
+  -fx-background-insets: 0 1 0 1, 0, 0;
+}
+.tab-pane .tab {
+  -fx-background-color: transparent;
+}
+
+.tab-pane .tab:hover {
+  -fx-background-color: #f7f7f7;
+}
+
+.tab-pane .tab:selected {
+  -fx-background-color: white;
+}
+
+.tab .tab-label {
+  -fx-alignment: CENTER;
+  -fx-text-fill: #000000;
+  -fx-font-size: 12px;
+}
+
+.tab:selected .tab-label {
+  -fx-alignment: CENTER;
+}
+
+.root {
+  -fx-focus-color: transparent;
+}
+
+.progress-bar {
+  -fx-border-radius: 3;
+  -fx-max-height: 10;
+}
+
+.progress-bar > .track {
+  -fx-text-box-border: white;
+  -fx-control-inner-background: #c7c7c7;
+}
+
+.progress-bar .bar {
+  -fx-background-color: #555555;
+}
+
+.progress-indicator {
+  -fx-progress-color: #555555;
+}
