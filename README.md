@@ -8,8 +8,10 @@
     </a>
 </p>
 
-## FluentFX
+## FluentFX - Fluent design for javafx
 
-Simple css for fluent design in javafx
+Simple css file for fluent design in javafx
 
-![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
+<p align="center">
+    ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
+</p>
