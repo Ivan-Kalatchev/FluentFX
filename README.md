@@ -12,6 +12,6 @@
 
 Simple css file for fluent design in javafx
 
-<p align="center">
+<div align="center">
     ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
-</p>
+</div>
