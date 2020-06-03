@@ -14,5 +14,9 @@ Simple css file for fluent design in javafx
 
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
 
+MenuBar
+
+![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/menu.gif?raw=true)
+
 ### What's new
-There are some tabs and progress indicators
+MenuBar
