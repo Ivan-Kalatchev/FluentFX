@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<VBox prefHeight="782.0" prefWidth="829.0" stylesheets="@NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="674.0" prefWidth="829.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button layoutX="29.0" layoutY="37.0" minHeight="12.0" minWidth="58.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" text="Button" />
+            <Button defaultButton="true" layoutX="146.0" layoutY="37.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" text="Button" />
+            <Button disable="true" layoutX="256.0" layoutY="37.0" mnemonicParsing="false" text="Button" />
+            <CheckBox layoutX="359.0" layoutY="39.0" mnemonicParsing="false" text="CheckBox" />
+            <DatePicker layoutX="98.0" layoutY="302.0" />
+            <ToggleButton layoutX="39.0" layoutY="85.0" mnemonicParsing="false" text="ToggleButton" />
+            <RadioButton layoutX="182.0" layoutY="92.0" mnemonicParsing="false" text="RadioButton" />
+            <ComboBox layoutX="296.0" layoutY="87.0" prefWidth="150.0" />
+            <PasswordField layoutX="93.0" layoutY="252.0" />
+            <ProgressBar layoutX="167.0" layoutY="372.0" maxHeight="96.0" prefHeight="14.0" prefWidth="385.0" />
+            <ProgressIndicator layoutX="333.0" layoutY="185.0" />
+            <ScrollBar layoutX="45.0" layoutY="158.0" prefHeight="14.0" prefWidth="203.0" />
+            <ScrollBar layoutX="38.0" layoutY="192.0" orientation="VERTICAL" prefHeight="219.0" prefWidth="9.0" />
+            <Slider layoutX="77.0" layoutY="185.0" />
+            <Slider layoutX="70.0" layoutY="232.0" orientation="VERTICAL" />
+            <TextField layoutX="94.0" layoutY="212.0" />
+            <Spinner layoutX="274.0" layoutY="253.0" />
+            <TableView layoutX="495.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <ColorPicker layoutX="269.0" layoutY="123.0" />
+            <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="543.0" layoutY="272.0" prefHeight="200.0" prefWidth="262.0" />
+            <TextArea layoutX="260.0" layoutY="461.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

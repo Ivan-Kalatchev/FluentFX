@@ -1,44 +1,45 @@
 .button {
-  -fx-background-color: #c7c7c7;
-  -fx-border-radius: 3;
+  -fx-font-size: 14px;
+  -fx-font-weight: 400;
+  -fx-text-alignment: CENTER;
+  -fx-min-width: 80px;
+  -fx-min-height: 32px;
+  -fx-background-color: #ffffff;
+  -fx-border-width: 1px;
+  -fx-border-color: black;
+  -fx-border-style: solid;
+  -fx-border-radius: 2px;
 }
 
 .button:default {
   -fx-background-color: rgb(58, 166, 255);
-  -fx-border-radius: 3;
+  -fx-text-fill: white;
+  -fx-border-width: 0px;
 }
 
 .button:default:hover {
-  -fx-border-radius: 3;
+  -fx-background-color: rgb(16, 110, 190);
 }
 
 .button:default:focused {
-  -fx-border-color: #0099bc;
-  -fx-border-radius: 3;
 }
 
 .button:default:pressed {
-  -fx-background-color: #7a7a7a;
-  -fx-scale-y: 0.99;
-  -fx-scale-x: 0.99;
-  -fx-border-radius: 3;
+  -fx-scale-y: 0.98;
+  -fx-scale-x: 0.98;
 }
 
 .button:hover {
-  -fx-background-color: #9c9c9c;
-  -fx-border-radius: 3;
+  -fx-background-color: rgb(243, 242, 241);
 }
 
 .button:focused {
-  -fx-background-color: #9c9c9c;
-  -fx-border-radius: 3;
+  -fx-border-width: 1.3px;
 }
 
 .button:pressed {
-  -fx-background-color: #5e5e5e;
-  -fx-scale-y: 0.99;
-  -fx-scale-x: 0.99;
-  -fx-border-radius: 3;
+  -fx-scale-y: 0.98;
+  -fx-scale-x: 0.98;
 }
 
 .text-field {
@@ -74,6 +75,10 @@
   -fx-background-color: white;
 }
 
+.check-box:selected>.box {
+  -fx-background-color: rgb(16, 110, 190);
+}
+
 .sidebar {
   -fx-background-color: #cacaca;
   -fx-min-height: 100%;
@@ -95,8 +100,16 @@
 }
 
 .toggle-button {
-  -fx-background-color: #c7c7c7;
-  -fx-border-radius: 3;
+  -fx-font-size: 14px;
+  -fx-font-weight: 400;
+  -fx-text-alignment: CENTER;
+  -fx-min-width: 80px;
+  -fx-min-height: 32px;
+  -fx-background-color: #ffffff;
+  -fx-border-width: 1px;
+  -fx-border-color: black;
+  -fx-border-style: solid;
+  -fx-border-radius: 2px;
 }
 
 .toggle-button:selected {
@@ -181,27 +194,73 @@
 }
 
 .menu-bar {
-    -fx-background-color: white ;
+  -fx-background-color: white;
 }
-.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
-    -fx-background: #c7c7c7 ;
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing {
+  -fx-background: #c7c7c7;
 }
 .menu-bar .label {
-    -fx-font-size: 16.0 pt;
+  -fx-font-size: 16 pt;
 }
 .menu-item {
-    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
-    -fx-text-fill: black;
-    -fx-background: #c7c7c7 ;
+  -fx-padding: 0em 0em 0em 0em;
+  -fx-text-fill: black;
+  -fx-background: #c7c7c7;
 }
-.menu-item .label{
-    -fx-font-size: 16.0 pt;
-    -fx-text-fill: black;
+.menu-item .label {
+  -fx-font-size: 16 pt;
+  -fx-text-fill: black;
 }
 .context-menu {
-    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
-    -fx-background-color:#e7e7e7 ;
-    -fx-border-width: 0.2px;
-    -fx-border-radius: 5;
-    -fx-border-color: black;
+  -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+  -fx-background-color: #e7e7e7;
+  -fx-border-width: 0.2px;
+  -fx-border-radius: 5;
+  -fx-border-color: black;
+}
+
+
+.radio-button {
+  /* 0 0 0 5 */
+  -fx-text-fill: -fx-text-background-color;
+  -fx-padding: 0 0 .5 0;
+}
+
+.radio-button>.radio,
+.radio-button:focused>.radio {
+  -fx-border-color: rgb(16, 110, 190);
+  -fx-border-radius: 1em;
+  -fx-background-radius: 1.0em;
+  /* large value to make sure this remains circular */
+  -fx-padding: 1 2 3 2;
+  -fx-background-color: white;
+}
+
+.radio-button>.radio>.dot {
+  -fx-background-color: transparent;
+  -fx-background-radius: 16px;
+  /* large value to make sure this remains circular */
+  -fx-padding: 6px;
+  /* 4 -- radius of the inner black dot when selected */
+  -fx-background-insets: 3 2 1 2;
+}
+
+.radio-button:selected>.radio,
+.radio-button:hover>.radio {
+  -fx-fill-color: rgb(16, 110, 190);
+}
+
+.radio-button:pressed>.radio {
+  -fx-background-color: rgb(16, 110, 190);
+}
+
+.radio-button:selected>.radio>.dot {
+  -fx-background-color: rgb(16, 110, 190);
+}
+.radio-button .dot:hover{
+  -fx-background-radius: 15px;
+  -fx-padding: 6px;
+  -fx-background-color: black;
 }
