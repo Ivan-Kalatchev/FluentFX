@@ -261,16 +261,16 @@
 /* ScrollBar */
 .scroll-bar {
     -fx-background-radius: 0;
-    -fx-background-color: #2A2A2C;
+    -fx-background-color: #c7c7c7;
 }
 
 .scroll-bar: vertical {
     -fx-background-radius: 0;
-    -fx-background-color: #2A2A2C;
+    -fx-background-color: #c7c7c7;
 }
 
 .scroll-bar>.decrement-button {
-    -fx-background-color: #2A2A2C;
+    -fx-background-color: #bdbdbd;
     -fx-background-radius: 0;
     -fx-border-width: 0;
     -fx-cursor: HAND;
@@ -285,19 +285,18 @@
 
 .scroll-bar .decrement-button:hover,
 .scroll-bar .increment-button:hover {
-    -fx-background-color: #007ACC;
+    -fx-background-color: #bdbdbd;
 }
 
 .scroll-bar:vertical .increment-arrow,
 .scroll-bar:vertical .decrement-arrow,
 .scroll-bar:horizontal .increment-arrow,
 .scroll-bar:horizontal .decrement-arrow {
-    -fx-shape: " ";
 }
 
 .scroll-bar:horizontal .thumb,
 .scroll-bar:vertical .thumb {
-    -fx-background-color: #3D3D3D;
+    -fx-background-color: #7c7c7c;
     -fx-background-radius: 0;
     -fx-cursor: HAND;
 }
@@ -305,58 +304,57 @@
 
 /* Menu */
 .menu-bar {
-    -fx-background-color: #2D2D30;
+    -fx-background-color: white;
     -fx-border-width: 0;
 }
 
 .menu-bar .menu-button {
-    -fx-background: #007ACC;
-    -fx-text-fill: #AFB1B3;
-    -fx-min-height: 20;
-    -fx-pref-height: 20;
-    -fx-padding: 0 5 0 5;
-    -fx-cursor: HAND;
+    -fx-background: #c7c7c7;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15 pt;
 }
 
 .menu-item {
     -fx-background-radius: 0;
-    -fx-border-width: 0;
-    -fx-text-fill: #AFB1B3;
-    -fx-background-color: #1A1A1A;
+    -fx-padding: 0em 0em 0em 0em;
+    -fx-text-fill: black;
+    -fx-background: #c7c7c7;
+}
+
+.menu-item .label {
+    -fx-font-size: 16 pt;
+    -fx-text-fill: black;
 }
 
 .menu-item:hover {
-    -fx-background-color: #3E3E40;
-    -fx-cursor: HAND;
+    -fx-background-color: #c7c7c7;
 }
 
 .menu-item:pressed {
-    -fx-background-color: #007ACC;
-    -fx-cursor: HAND;
 }
 
 .context-menu {
-    -fx-background-color: #1A1A1A;
-    -fx-border-width: 0;
-    -fx-padding: 0 0 -1 0;
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #e7e7e7;
+    -fx-border-width: 0.2px;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
 }
 
 
 /* ProgressBar */
 .progress-bar {
-    -fx-background-color: transparent;
+    -fx-border-radius: 3;
+    -fx-max-height: 10;
 }
 
 .progress-bar .bar {
-    -fx-background-color: #007ACC;
-    -fx-background-radius: 0;
-    -fx-padding: 3;
-    -fx-background-insets: 0;
+    -fx-background-color: rgb(16, 110, 190);
 }
 
 .progress-bar .track {
-    -fx-background-color: transparent;
-    -fx-background-radius: 0;
+    -fx-text-box-border: white;
+    -fx-control-inner-background: #f7f7f7;;
 }
 
 
@@ -366,32 +364,29 @@
 }
 
 .slider .track {
-    -fx-background-color: #1A1A1A;
-    -fx-background-radius: 0;
-    -fx-background-insets: 2 -2 1 0;
+    -fx-background-color: #c7c7c7;
 }
 
 .slider .thumb {
-    -fx-background-color: #B1B1B1;
+    -fx-background-color: white;
     -fx-background-radius: 6;
-    -fx-background-insets: 1 0 1 2;
     -fx-border-radius: 6;
-    -fx-border-insets: 1 0 1 2;
-    -fx-pref-width: 12;
-    -fx-pref-height: 12;
-    -fx-cursor: HAND;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
 }
 
 .slider:focused .thumb {
-    -fx-border-color: #007ACC;
+    -fx-border-color: rgb(16, 110, 190);
+}
+
+.slider:focused .track {
+    -fx-background-color: #4da9e7;
 }
 
 .slider .thumb:hover {
-    -fx-background-color: #3E3E40;
 }
 
 .slider .thumb:pressed {
-    -fx-background-color: #007ACC;
 }
 
 
@@ -671,4 +666,55 @@
     -fx-border-width: 2;
     -fx-border-radius: 1.4;
     -fx-border-style: solid none solid solid;
+}
+
+/* Radio Button */
+.radio-button {
+    /* 0 0 0 5 */
+    -fx-text-fill: -fx-text-background-color;
+    -fx-padding: 0 0 .5 0;
+}
+
+.radio-button>.radio,
+.radio-button:focused>.radio {
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-radius: 1em;
+    -fx-background-radius: 1.0em;
+    /* large value to make sure this remains circular */
+    -fx-padding: 1 2 3 2;
+    -fx-background-color: white;
+}
+
+.radio-button>.radio>.dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 16px;
+    /* large value to make sure this remains circular */
+    -fx-padding: 6px;
+    /* 4 -- radius of the inner black dot when selected */
+    -fx-background-insets: 3 2 1 2;
+}
+
+.radio-button:selected>.radio,
+.radio-button:hover>.radio {
+    -fx-border-color: rgb(16, 110, 190);
+    -fx-fill-color: rgb(16, 110, 190);
+}
+
+.radio-button:pressed>.radio {
+    -fx-background-color: rgb(16, 110, 190);
+}
+
+.radio-button:selected>.radio>.dot {
+    -fx-background-color: rgb(16, 110, 190);
+}
+
+.radio-button .dot:hover {
+    -fx-background-radius: 15px;
+    -fx-padding: 6px;
+    -fx-background-color: black;
+}
+
+/* More color picker */
+.color-picker .color-picker-label{
+    -fx-background-color: white;
 }
