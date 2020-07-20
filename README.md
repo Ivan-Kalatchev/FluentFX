@@ -23,5 +23,5 @@ MenuBar
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/menu.gif?raw=true)
 
 ### What's new
-Experimental new look
+Experimental new look <br>
 Migrating to the web controls - https://developer.microsoft.com/en-us/fluentui#/controls/
