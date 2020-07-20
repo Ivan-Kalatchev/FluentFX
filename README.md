@@ -10,6 +10,10 @@
 
 ## FluentFX - Fluent design for javafx
 
+# NEW LOOK AND FEEL
+
+<img src="./Experimental_look.png"/>
+
 Simple css file for fluent design in javafx
 
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
@@ -19,4 +23,5 @@ MenuBar
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/menu.gif?raw=true)
 
 ### What's new
-MenuBar
+Experimental new look
+Migrating to the web controls - https://developer.microsoft.com/en-us/fluentui#/controls/
