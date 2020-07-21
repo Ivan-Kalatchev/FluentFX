@@ -801,11 +801,10 @@
 
 .def-men{
     -fx-background-color: rgb(18, 122, 214) !important;
-    -fx-text-fill: red !important;
     -fx-border-width: 0px !important;
 }
 
-.def-men .label {
+.def-men>.label {
     -fx-text-fill: white !important;
 }
 
@@ -854,6 +853,46 @@
     -fx-border-color: black;
     -fx-border-style: solid none solid solid;
     -fx-border-radius: 2px;
+}
+
+.def-spl>.label {
+    -fx-background-color: rgb(18, 122, 214) !important;
+    -fx-text-fill: white;
+    -fx-border-width: 0px !important;
+}
+
+.def-spl>.label:hover {
+    -fx-background-color: rgb(16, 110, 190) !important;
+}
+
+.def-spl .arrow-button .arrow {
+    -fx-background-color: white !important;
+}
+
+.def-spl .arrow-button {
+    -fx-background-color: rgb(18, 122, 214) !important;
+    -fx-text-fill: white;
+    -fx-border-width: 0px !important;
+}
+
+.def-spl .arrow-button:hover {
+    -fx-background-color: rgb(16, 110, 190) !important;
+}
+
+.split-menu-button>.label:hover {
+    -fx-background-color: rgb(243, 242, 241);
+}
+
+.split-menu-button>.label:pressed {
+    -fx-background-color: rgb(230, 230, 230);
+}
+
+.split-menu-button .arrow-button:hover {
+    -fx-background-color: rgb(243, 242, 241);
+}
+
+.split-menu-button .arrow-button:pressed {
+    -fx-background-color: rgb(230, 230, 230);
 }
 
 .split-menu-button .arrow-button .arrow {
