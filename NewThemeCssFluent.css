@@ -925,3 +925,21 @@
 
 .split-menu-button .context-menu .menu-item .label {
 }
+
+/* Command button */
+
+.com-btn{
+    -fx-text-alignment: LEFT !important;
+    -fx-min-width: 0 !important;
+    -fx-min-height: 0 !important;
+    -fx-background-color: #ffffff;
+    -fx-border-style: none !important;
+    -fx-border-radius: 0px !important;
+    -fx-border-width: 0px !important;
+    -fx-padding:0;
+}
+
+.com-btn:hover {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: rgb(16, 110, 190) !important;
+}

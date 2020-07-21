@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
@@ -9,12 +10,14 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="619.0" stylesheets="@NewThemeCssFluent.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="1031.0" stylesheets="@NewThemeCssFluent.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
     <Tab text="Buttons">
       <content>
@@ -73,7 +76,14 @@
                   </Button>
                   <MenuButton layoutX="14.0" layoutY="316.0" mnemonicParsing="false" text="MenuButton">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 1">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@open.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
                       <MenuItem mnemonicParsing="false" text="Action 2" />
                     </items>
                   </MenuButton>
@@ -88,19 +98,40 @@
                         <MenuItem mnemonicParsing="false" text="Action 2" />
                      </items>
                   </MenuButton>
-                  <Line endX="40.0" endY="27.0" layoutX="226.0" layoutY="328.0" startX="40.0" startY="-19.0" />
-                  <SplitMenuButton layoutX="277.0" layoutY="316.0" mnemonicParsing="false" text="SplitMenuButton">
+                  <SplitMenuButton layoutX="14.0" layoutY="395.0" mnemonicParsing="false" text="SplitMenuButton">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Action 1" />
                       <MenuItem mnemonicParsing="false" text="Action 2" />
                     </items>
                   </SplitMenuButton>
-                  <SplitMenuButton layoutX="445.0" layoutY="316.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="136.0" styleClass="def-spl" text="SplitMenuButton">
+                  <SplitMenuButton layoutX="182.0" layoutY="395.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="136.0" styleClass="def-spl" text="SplitMenuButton">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Action 1" />
                         <MenuItem mnemonicParsing="false" text="Action 2" />
                      </items>
                   </SplitMenuButton>
+                  <Label layoutX="14.0" layoutY="356.0" prefHeight="30.0" prefWidth="212.0" style="-fx-font-size: 20;" text="Split menu buttons">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="436.0" prefHeight="30.0" prefWidth="212.0" style="-fx-font-size: 20;" text="Command button">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Label>
+                  <Button graphicTextGap="5.0" layoutX="17.0" layoutY="473.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="146.0" styleClass="com-btn" text="Command button" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@open.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
                </children></AnchorPane>
       </content>
     </Tab>
@@ -129,6 +160,34 @@
                   </Label>
                   <PasswordField layoutX="14.0" layoutY="101.0" prefHeight="29.0" prefWidth="199.0" />
                   <Button defaultButton="true" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" text="Login" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Demo">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="715.0" fitWidth="1136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@demo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="321.0" layoutY="130.0" prefHeight="379.0" prefWidth="390.0" style="-fx-background-color: rgb(255, 255, 255, 0.7);">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" style="-fx-font-size: 18;" text="Server" />
+                        <TextField layoutX="14.0" layoutY="49.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Label layoutX="16.0" layoutY="149.0" style="-fx-font-size: 18;" text="User" />
+                        <TextField layoutX="16.0" layoutY="176.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Label layoutX="16.0" layoutY="213.0" style="-fx-font-size: 18;" text="Password" />
+                        <Label layoutX="14.0" layoutY="85.0" style="-fx-font-size: 18;" text="Database" />
+                        <TextField layoutX="14.0" layoutY="112.0" prefHeight="29.0" prefWidth="360.0" />
+                        <PasswordField layoutX="14.0" layoutY="240.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Button defaultButton="true" layoutX="13.0" layoutY="282.0" mnemonicParsing="false" text="Login" />
+                        <Line endX="256.0" layoutX="115.0" layoutY="336.0" startX="-100.0" />
+                        <Label layoutX="13.0" layoutY="346.0" text="Copiright Vanky EOOD 2019 C" />
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
          </content>
