@@ -792,6 +792,34 @@
     -fx-border-radius: 2px;
 }
 
+.menu-button:hover {
+    -fx-background-color: rgb(243, 242, 241);
+}
+
+.menu-button:focused {
+}
+
+.def-men{
+    -fx-background-color: rgb(18, 122, 214) !important;
+    -fx-text-fill: red !important;
+    -fx-border-width: 0px !important;
+}
+
+.def-men .label {
+    -fx-text-fill: white !important;
+}
+
+.def-men .arrow-button .arrow {
+    -fx-background-color: white !important;
+    -fx-background-insets: 0;
+    -fx-padding: 2 4;
+    -fx-shape: "M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z";
+}
+
+.def-men:hover {
+    -fx-background-color: rgb(16, 110, 190) !important;
+}
+
 .menu-button .arrow-button .arrow{
     -fx-background-color: black;
     -fx-background-insets: 0;
@@ -812,3 +840,49 @@
     -fx-padding: 0em 0em 0em 0em;
     -fx-background-color: red !important;
 }*/
+
+/* Split menu button */
+
+.split-menu-button>.label{
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-text-alignment: CENTER;
+    -fx-min-width: 80px;
+    -fx-min-height: 32px;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-style: solid none solid solid;
+    -fx-border-radius: 2px;
+}
+
+.split-menu-button .arrow-button .arrow {
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-padding: 2 4;
+    -fx-shape: "M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z";
+}
+
+.split-menu-button .arrow-button {
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-text-alignment: CENTER;
+    -fx-min-width: 80px;
+    -fx-min-height: 32px;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-style: none solid solid solid;
+    -fx-border-radius: 2px;
+}
+
+.split-menu-button .context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: white;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0;
+    -fx-min-width: 150px;
+}
+
+.split-menu-button .context-menu .menu-item .label {
+}
