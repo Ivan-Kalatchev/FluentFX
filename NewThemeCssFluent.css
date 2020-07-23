@@ -261,13 +261,20 @@
 /* ScrollBar */
 .scroll-bar {
     -fx-background-radius: 0;
-    -fx-background-color: #c7c7c7;
+    -fx-background-color: transparent !important;
+    -fx-pref-width: 9;
 }
 
-.scroll-bar:vertical {
+.scroll-bar:hover {
     -fx-background-radius: 0;
-    -fx-background-color: #c7c7c7;
+    -fx-background-color: #bdbdbd !important;
+    -fx-pref-width: 16;
 }
+
+/* .scroll-bar:vertical {
+    -fx-background-radius: 0;
+    -fx-background-color: transparent !important;
+} */
 
 .scroll-bar>.decrement-button {
     -fx-background-color: #bdbdbd;
@@ -297,7 +304,8 @@
 .scroll-bar:horizontal .thumb,
 .scroll-bar:vertical .thumb {
     -fx-background-color: #7c7c7c;
-    -fx-background-radius: 0;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
     -fx-cursor: HAND;
 }
 
@@ -345,6 +353,7 @@
 /* ProgressBar */
 .progress-bar {
     -fx-border-radius: 3;
+    /* -fx-indeterminate-bar-animation-time:1; */
     -fx-max-height: 10;
 }
 
@@ -833,6 +842,32 @@
     -fx-min-width: 150px;
 }
 
+.men-de{
+    -fx-background-color:  #c7c7c7;
+    -fx-border-radius: 2 !important;
+    -fx-background-radius: 2 !important;
+    -fx-min-height: 31 !important;
+    -fx-border-width: 0;
+    -fx-text-fill: black;
+    -fx-font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.men-de:hover{
+    -fx-background-color:  #dad8d8;
+}
+
+.men-de:pressed{
+    -fx-background-color:  #a7a7a7;
+}
+
+.men-de .context-menu{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #e7e7e7;
+    -fx-border-width: 0.2px;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+}
+
 /* .menu-button .context-menu .menu-button:hover,
 .menu-button .context-menu .menu-button:focused,
 .menu-button .context-menu .menu-button:showing {
@@ -855,9 +890,13 @@
     -fx-border-radius: 2px;
 }
 
+.split-menu-button:focused{
+    -fx-background-color: #9b9b9b;
+}
+
 .def-spl>.label {
     -fx-background-color: rgb(18, 122, 214) !important;
-    -fx-text-fill: white;
+    -fx-text-fill: white !important;
     -fx-border-width: 0px !important;
 }
 
@@ -926,6 +965,52 @@
 .split-menu-button .context-menu .menu-item .label {
 }
 
+.spl-de>.label{
+    -fx-background-color:  #c7c7c7;
+    -fx-border-radius: 2 !important;
+    -fx-background-radius: 2 !important;
+    -fx-min-height: 31 !important;
+    -fx-border-width: 0;
+    -fx-text-fill: black;
+    -fx-font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.spl-de>.label:hover {
+    -fx-background-color: #dad8d8;
+    -fx-border-width: 0;
+}
+
+.spl-de>.label:pressed {
+    -fx-background-color:  #a7a7a7;
+}
+
+.spl-de .arrow-button {
+    -fx-background-color:  #c7c7c7;
+    -fx-border-radius: 2 !important;
+    -fx-background-radius: 2 !important;
+    -fx-min-height: 31 !important;
+    -fx-border-width: 0;
+    -fx-text-fill: black;
+    -fx-font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.spl-de .arrow-button:hover {
+    -fx-background-color: #dad8d8;
+}
+
+.spl-de .arrow-button:pressed {
+    -fx-background-color: #a7a7a7;
+}
+
+.spl-de .context-menu{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #e7e7e7;
+    -fx-border-width: 0.2px;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+}
+
+
 /* Command button */
 
 .com-btn{
@@ -942,4 +1027,85 @@
 .com-btn:hover {
     -fx-background-color: #ffffff;
     -fx-text-fill: rgb(16, 110, 190) !important;
+}
+
+/* FLUENT DESKTOP */
+.btn-de {
+    -fx-background-color:  #c7c7c7;
+    -fx-border-radius: 2 !important;
+    -fx-background-radius: 2 !important;
+    -fx-min-height: 31 !important;
+    -fx-border-width: 0;
+    -fx-text-fill: black;
+    -fx-font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.btn-de:hover {
+    -fx-background-color: #dad8d8;
+    -fx-border-width: 0;
+}
+
+.btn-de:focused {
+    -fx-border-width: 0;
+}
+
+.btn-de:pressed {
+    -fx-background-color:  #a7a7a7;
+    -fx-scale-y: 0.99;
+    -fx-border-width: 0;
+    -fx-scale-x: 0.97;
+}
+
+.btn-de:default {
+    -fx-background-color: rgb(28, 129, 211);
+    -fx-text-fill: white;
+    -fx-font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.btn-de:default:hover {
+    -fx-background-color: rgb(52, 142, 216);
+}
+
+.btn-de:default:focused {
+}
+
+.btn-de:default:pressed {
+    -fx-background-color:  rgb(0, 103, 187);
+    -fx-scale-y: 0.99;
+    -fx-scale-x: 0.98;
+}
+
+.btn-gr{
+
+    -fx-background-color:  transparent;
+    -fx-border-radius: 2 !important;
+    -fx-background-radius: 2 !important;
+    -fx-border-width: 0 !important;
+    -fx-min-width: 0 !important;
+}
+
+.btn-gr:hover{
+
+    -fx-background-color:  rgba(100, 100, 100, 0.219);
+
+}
+
+.btn-gr:pressed {
+    -fx-background-color: rgba(100, 100, 100, 0.486);
+    -fx-scale-y: 0.99;
+    -fx-scale-x: 0.98;
+}
+
+.reveal:hover{
+    -fx-border-width: 0.5;
+    -fx-border-color:black !important;
+}
+
+.code .content{
+    -fx-background-color: rgb(54, 54, 54) !important;
+    -fx-text-fill: white !important;
+}
+
+.code{
+    -fx-text-fill: white !important;
 }
