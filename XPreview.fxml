@@ -22,28 +22,14 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1688.0" prefWidth="1031.0" stylesheets="@NewThemeCssFluent.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1621.0" prefWidth="1031.0" stylesheets="@lib/styles/NewThemeCssFluent.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
     <Tab text="Buttons">
          <content>
-            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+            <ScrollPane prefHeight="1722.0" prefWidth="1031.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1660.0" prefWidth="1015.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1564.0" prefWidth="1015.0" style="-fx-background-color: white;">
                      <children>
-                        <Button defaultButton="true" layoutX="247.0" layoutY="1341.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
-                           <graphic>
-                              <Pane prefHeight="79.0" prefWidth="210.0">
-                                 <children>
-                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: white;" text="Standart" textFill="#6f6f6f">
-                                       <font>
-                                          <Font name="Britannic Bold" size="12.0" />
-                                       </font>
-                                    </Label>
-                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: white;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
-                                 </children>
-                              </Pane>
-                           </graphic>
-                        </Button>
                         <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20;" text="Standart button">
                            <font>
                               <Font size="59.0" />
@@ -97,68 +83,54 @@
                            </styleClass>
                         </Button>
                         <TextArea layoutX="15.0" layoutY="359.0" prefHeight="47.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;16.0&quot; layoutY=&quot;318.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;&gt;&lt;styleClass&gt;&lt;String fx:value=&quot;btn-de&quot; /&gt;&lt;String fx:value=&quot;reveal&quot; /&gt;&lt;/styleClass&gt;&lt;/Button&gt;" />
-                        <Label layoutX="15.0" layoutY="1012.0" style="-fx-font-size: 25;" text="Advanced buttons">
+                        <Label layoutX="15.0" layoutY="813.0" style="-fx-font-size: 25;" text="Advanced buttons">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <Label layoutX="15.0" layoutY="1048.0" style="-fx-font-size: 20;" text="Web fluent stle button">
+                        <Label layoutX="15.0" layoutY="849.0" style="-fx-font-size: 20;" text="Web fluent stle button">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <Button layoutX="15.0" layoutY="1083.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" text="Web style button" />
-                        <TextArea editable="false" layoutX="14.0" layoutY="1123.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
-                        <Button defaultButton="true" layoutX="194.0" layoutY="1083.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" text="Web style button" />
-                        <Label layoutX="15.0" layoutY="1173.0" style="-fx-font-size: 20;" text="Outlined action buttons">
+                        <Button layoutX="15.0" layoutY="884.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" text="Web style button" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="924.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
+                        <Button defaultButton="true" layoutX="194.0" layoutY="884.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" text="Web style button" />
+                        <Label layoutX="15.0" layoutY="974.0" style="-fx-font-size: 20;" text="Outlined action buttons">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <Button layoutX="15.0" layoutY="1208.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" styleClass="danger-outline-button" text="Web style button" />
-                        <TextArea editable="false" layoutX="14.0" layoutY="1248.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
-                        <Button defaultButton="true" layoutX="186.0" layoutY="1208.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="success-outline-button" text="Web style button" />
-                        <Button defaultButton="true" layoutX="357.0" layoutY="1208.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="dark-outline-button" text="Web style button" />
-                        <Button defaultButton="true" layoutX="527.0" layoutY="1208.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="outline-button" text="Web style button" />
-                        <Label layoutX="15.0" layoutY="1307.0" style="-fx-font-size: 20;" text="Content button">
+                        <Button layoutX="15.0" layoutY="1009.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" styleClass="danger-outline-button" text="Web style button" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="1049.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <Button defaultButton="true" layoutX="186.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="success-outline-button" text="Web style button" />
+                        <Button defaultButton="true" layoutX="357.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="dark-outline-button" text="Web style button" />
+                        <Button defaultButton="true" layoutX="527.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="outline-button" text="Web style button" />
+                        <Label layoutX="15.0" layoutY="1108.0" style="-fx-font-size: 20;" text="Content button">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <TextArea editable="false" layoutX="17.0" layoutY="1432.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
-                        <Button layoutX="18.0" layoutY="1341.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
-                           <graphic>
-                              <Pane prefHeight="79.0" prefWidth="210.0">
-                                 <children>
-                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: black;" text="Standart" textFill="#6f6f6f">
-                                       <font>
-                                          <Font name="Britannic Bold" size="12.0" />
-                                       </font>
-                                    </Label>
-                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: black;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
-                                 </children>
-                              </Pane>
-                           </graphic>
-                        </Button>
-                        <Label layoutX="18.0" layoutY="1484.0" style="-fx-font-size: 20;" text="Split menu buttons">
+                        <TextArea editable="false" layoutX="17.0" layoutY="1233.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
+                        <Label layoutX="18.0" layoutY="1285.0" style="-fx-font-size: 20;" text="Split menu buttons">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <TextArea editable="false" layoutX="19.0" layoutY="1559.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
-                        <SplitMenuButton layoutX="20.0" layoutY="1518.0" mnemonicParsing="false" text="SplitMenuButton">
+                        <TextArea editable="false" layoutX="19.0" layoutY="1360.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <SplitMenuButton layoutX="20.0" layoutY="1319.0" mnemonicParsing="false" text="SplitMenuButton">
                           <items>
                             <MenuItem mnemonicParsing="false" text="Action 1" />
                             <MenuItem mnemonicParsing="false" text="Action 2" />
                           </items>
                         </SplitMenuButton>
-                        <Label layoutX="20.0" layoutY="1617.0" style="-fx-font-size: 20;" text="Menu button">
+                        <Label layoutX="22.0" layoutY="1418.0" style="-fx-font-size: 20;" text="Menu button">
                            <font>
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <TextArea editable="false" layoutX="20.0" layoutY="1692.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
-                        <MenuButton layoutX="21.0" layoutY="1653.0" mnemonicParsing="false" text="MenuButton">
+                        <TextArea editable="false" layoutX="20.0" layoutY="1493.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <MenuButton layoutX="21.0" layoutY="1454.0" mnemonicParsing="false" text="MenuButton">
                           <items>
                             <MenuItem mnemonicParsing="false" text="Action 1" />
                             <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -208,6 +180,34 @@
                               <String fx:value="def-spl" />
                            </styleClass>
                         </SplitMenuButton>
+                        <Button layoutX="14.0" layoutY="1142.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
+                           <graphic>
+                              <Pane prefHeight="79.0" prefWidth="210.0">
+                                 <children>
+                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: black;" text="Standart" textFill="#6f6f6f">
+                                       <font>
+                                          <Font name="Britannic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: black;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                        <Button defaultButton="true" layoutX="237.0" layoutY="1142.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
+                           <graphic>
+                              <Pane prefHeight="79.0" prefWidth="210.0">
+                                 <children>
+                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: white;" text="Standart" textFill="#6f6f6f">
+                                       <font>
+                                          <Font name="Britannic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: white;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
                      </children>
                   </AnchorPane>
               </content>
@@ -216,11 +216,46 @@
     </Tab>
     <Tab text="Inputs">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <TextField layoutX="226.0" layoutY="173.0" promptText="Username" />
-               </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
       </content>
+         <content>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1592.0" prefWidth="1023.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="11.0" layoutY="14.0" style="-fx-font-size: 20;" text="Standart input">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="91.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextField layoutX="11.0" layoutY="50.0" prefHeight="29.0" prefWidth="207.0" />
+                        <Label layoutX="11.0" layoutY="138.0" style="-fx-font-size: 20;" text="Standart input with a placeholder">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="240.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextField layoutX="11.0" layoutY="199.0" prefHeight="29.0" prefWidth="207.0" promptText="Jhon Smith" />
+                        <Label layoutX="14.0" layoutY="170.0" style="-fx-font-size: 16;" text="What's your name:" />
+                        <Label layoutX="11.0" layoutY="291.0" style="-fx-font-size: 20;" text="Standart multi-line input">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="368.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextArea layoutX="11.0" layoutY="321.0" prefHeight="0.0" prefWidth="200.0" />
+                        <Label layoutX="14.0" layoutY="420.0" style="-fx-font-size: 20;" text="Standart passoword box">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="14.0" layoutY="497.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <PasswordField layoutX="14.0" layoutY="456.0" prefHeight="29.0" prefWidth="199.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </content>
     </Tab>
       <Tab text="Forms">
          <content>
@@ -251,7 +286,7 @@
                <children>
                   <ImageView fitHeight="715.0" fitWidth="1136.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@demo.jpg" />
+                        <Image url="@Images/demo.jpg" />
                      </image>
                   </ImageView>
                   <Pane layoutX="321.0" layoutY="130.0" prefHeight="379.0" prefWidth="390.0" style="-fx-background-color: rgb(255, 255, 255, 0.7);">
