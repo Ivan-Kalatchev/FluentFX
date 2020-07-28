@@ -6,8 +6,12 @@
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
     </a>
-    [![Java 8](https://img.shields.io/badge/Java-8-red.svg)](https://www.java.com)
-    ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
+    <a href="https://www.java.com">
+      <img src="https://img.shields.io/badge/Java-8-red.svg">
+    </a>
+    <a href="LICENSE">
+      <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
+    </a>
 </p>
 
 ## FluentFX - Fluent design for javafx
