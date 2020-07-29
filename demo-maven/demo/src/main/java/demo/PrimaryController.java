@@ -28,6 +28,9 @@ public class PrimaryController {
     public TreeView<TreeItem<String>> NavigationView;
 
     @FXML
+    public TreeView<TreeItem<String>> Settings;
+
+    @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
     }
@@ -72,6 +75,10 @@ public class PrimaryController {
 
         Ham1.setGraphic(fontAwesome.create(FontAwesome.Glyph.BARS));
 
+        // TreeItem settings = new TreeItem("Settings");
+        // settings.setGraphic(fontAwesome.create(FontAwesome.Glyph.GEAR));
+        // Settings.setRoot(settings);
+
         TreeItem webItem = new TreeItem("Data");
         webItem.setGraphic(fontAwesome.create(FontAwesome.Glyph.TABLE));
         rootItem.getChildren().add(webItem);
@@ -87,5 +94,11 @@ public class PrimaryController {
         System.out.println("Raboti");
         NavigationView.setRoot(rootItem);
         System.out.println("Raboti2");
+
+        NavigationView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> updateSelectedItem(newValue));
+    }
+
+    private void updateSelectedItem(Object newValue) {      
+        System.out.println(newValue);
     }
 }

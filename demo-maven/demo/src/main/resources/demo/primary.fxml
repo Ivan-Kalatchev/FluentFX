@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="193.0" style="-fx-background-color: #f8f8f8;">
+      <VBox prefHeight="400.0" prefWidth="191.0" style="-fx-background-color: #f8f8f8;">
          <children>
             <HBox prefHeight="37.0" prefWidth="193.0">
                <children>
@@ -20,7 +20,7 @@
                   </Button>
                </children>
             </HBox>
-            <TreeView fx:id="NavigationView" fixedCellSize="-2.0" minHeight="10.0" showRoot="false">
+            <TreeView fx:id="NavigationView" fixedCellSize="-2.0" prefHeight="474.0" prefWidth="191.0" showRoot="false">
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin></TreeView>
