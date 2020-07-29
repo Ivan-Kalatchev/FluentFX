@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1621.0" prefWidth="1031.0" stylesheets="@Styles/NewThemeCssFluent.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
+  <tabs>
+    <Tab text="Buttons">
+         <content>
+            <ScrollPane prefHeight="1722.0" prefWidth="1031.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1564.0" prefWidth="1015.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20;" text="Standart button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button defaultButton="true" layoutX="143.0" layoutY="49.0" mnemonicParsing="false" styleClass="btn-de" text="Standart button" />
+                        <Button disable="true" layoutX="15.0" layoutY="177.0" mnemonicParsing="false" styleClass="btn-de" text="Standart button" />
+                        <Label layoutX="15.0" layoutY="141.0" style="-fx-font-size: 20;" text="Disabled button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button defaultButton="true" disable="true" layoutX="144.0" layoutY="177.0" mnemonicParsing="false" styleClass="btn-de" text="Standart button" />
+                        <Button layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onAction="#WriteNE" styleClass="btn-de" text="Standart button">
+                           <tooltip>
+                              <Tooltip text="Standart button" />
+                           </tooltip>
+                        </Button>
+                        <Label layoutX="15.0" layoutY="419.0" style="-fx-font-size: 20;" text="Graphical button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="15.0" layoutY="454.0" minWidth="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="42.0" styleClass="btn-gr">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/open.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextArea editable="false" layoutX="14.0" layoutY="88.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="218.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="500.0" prefHeight="19.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-gr&quot; text=&quot;&quot;  /&gt;" wrapText="true" />
+                        <Button layoutX="16.0" layoutY="318.0" mnemonicParsing="false" text="Standart button">
+                           <styleClass>
+                              <String fx:value="btn-de" />
+                              <String fx:value="reveal" />
+                           </styleClass>
+                        </Button>
+                        <Label layoutX="16.0" layoutY="282.0" style="-fx-font-size: 20;" text="Reveal style button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button defaultButton="true" layoutX="145.0" layoutY="318.0" mnemonicParsing="false" text="Standart button">
+                           <styleClass>
+                              <String fx:value="btn-de" />
+                              <String fx:value="reveal" />
+                           </styleClass>
+                        </Button>
+                        <TextArea layoutX="15.0" layoutY="359.0" prefHeight="47.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;16.0&quot; layoutY=&quot;318.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;&gt;&lt;styleClass&gt;&lt;String fx:value=&quot;btn-de&quot; /&gt;&lt;String fx:value=&quot;reveal&quot; /&gt;&lt;/styleClass&gt;&lt;/Button&gt;" />
+                        <Label layoutX="15.0" layoutY="813.0" style="-fx-font-size: 25;" text="Advanced buttons">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="849.0" style="-fx-font-size: 20;" text="Web fluent stle button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="15.0" layoutY="884.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" text="Web style button" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="924.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
+                        <Button defaultButton="true" layoutX="194.0" layoutY="884.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" text="Web style button" />
+                        <Label layoutX="15.0" layoutY="974.0" style="-fx-font-size: 20;" text="Outlined action buttons">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="15.0" layoutY="1009.0" minHeight="21.0" minWidth="44.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="167.0" styleClass="danger-outline-button" text="Web style button" />
+                        <TextArea editable="false" layoutX="14.0" layoutY="1049.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <Button defaultButton="true" layoutX="186.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="success-outline-button" text="Web style button" />
+                        <Button defaultButton="true" layoutX="357.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="dark-outline-button" text="Web style button" />
+                        <Button defaultButton="true" layoutX="527.0" layoutY="1009.0" minHeight="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="167.0" styleClass="outline-button" text="Web style button" />
+                        <Label layoutX="15.0" layoutY="1108.0" style="-fx-font-size: 20;" text="Content button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="17.0" layoutY="1233.0" prefHeight="11.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; text=&quot;Standart button&quot;  /&gt;" wrapText="true" />
+                        <Label layoutX="18.0" layoutY="1285.0" style="-fx-font-size: 20;" text="Split menu buttons">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="19.0" layoutY="1360.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <SplitMenuButton layoutX="20.0" layoutY="1319.0" mnemonicParsing="false" text="SplitMenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </SplitMenuButton>
+                        <Label layoutX="22.0" layoutY="1418.0" style="-fx-font-size: 20;" text="Menu button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="20.0" layoutY="1493.0" prefHeight="51.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; disable=&quot;true&quot;  /&gt;" wrapText="true" />
+                        <MenuButton layoutX="21.0" layoutY="1454.0" mnemonicParsing="false" text="MenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                        <Label layoutX="14.0" layoutY="552.0" style="-fx-font-size: 20;" text="Split menu button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="13.0" layoutY="633.0" prefHeight="19.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-gr&quot; text=&quot;&quot;  /&gt;" wrapText="true" />
+                        <SplitMenuButton layoutX="14.0" layoutY="591.0" mnemonicParsing="false" styleClass="spl-de" text="SplitMenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </SplitMenuButton>
+                        <Label layoutX="14.0" layoutY="683.0" style="-fx-font-size: 20;" text="Menu button">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="13.0" layoutY="764.0" prefHeight="19.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-gr&quot; text=&quot;&quot;  /&gt;" wrapText="true" />
+                        <MenuButton layoutX="16.0" layoutY="720.0" mnemonicParsing="false" styleClass="men-de" text="MenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                        <MenuButton layoutX="136.0" layoutY="720.0" mnemonicParsing="false" text="MenuButton">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                           <styleClass>
+                              <String fx:value="men-de" />
+                              <String fx:value="def-men" />
+                           </styleClass>
+                        </MenuButton>
+                        <SplitMenuButton layoutX="183.0" layoutY="591.0" mnemonicParsing="false" text="SplitMenuButton">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                           <styleClass>
+                              <String fx:value="spl-de" />
+                              <String fx:value="def-spl" />
+                           </styleClass>
+                        </SplitMenuButton>
+                        <Button layoutX="14.0" layoutY="1142.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
+                           <graphic>
+                              <Pane prefHeight="79.0" prefWidth="210.0">
+                                 <children>
+                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: black;" text="Standart" textFill="#6f6f6f">
+                                       <font>
+                                          <Font name="Britannic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: black;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                        <Button defaultButton="true" layoutX="237.0" layoutY="1142.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="212.0">
+                           <graphic>
+                              <Pane prefHeight="79.0" prefWidth="210.0">
+                                 <children>
+                                    <Label layoutX="-2.0" layoutY="10.0" style="-fx-font-size: 17; -fx-text-fill: white;" text="Standart" textFill="#6f6f6f">
+                                       <font>
+                                          <Font name="Britannic Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="-2.0" layoutY="35.0" prefHeight="19.0" prefWidth="194.0" style="-fx-font-size: 13; -fx-text-fill: white;" text="This is secoundary text" textAlignment="JUSTIFY" textFill="#6b6b6b" wrapText="true" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </content>
+    </Tab>
+    <Tab text="Inputs">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+         <content>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1592.0" prefWidth="1023.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="11.0" layoutY="14.0" style="-fx-font-size: 20;" text="Standart input">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="91.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextField fx:id="AzNeZnam" layoutX="11.0" layoutY="50.0" prefHeight="29.0" prefWidth="207.0" />
+                        <Label layoutX="11.0" layoutY="138.0" style="-fx-font-size: 20;" text="Standart input with a placeholder">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="240.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextField layoutX="11.0" layoutY="199.0" prefHeight="29.0" prefWidth="207.0" promptText="Jhon Smith" />
+                        <Label layoutX="14.0" layoutY="170.0" style="-fx-font-size: 16;" text="What's your name:" />
+                        <Label layoutX="11.0" layoutY="291.0" style="-fx-font-size: 20;" text="Standart multi-line input">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="11.0" layoutY="368.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <TextArea layoutX="11.0" layoutY="321.0" prefHeight="0.0" prefWidth="200.0" />
+                        <Label layoutX="14.0" layoutY="420.0" style="-fx-font-size: 20;" text="Standart passoword box">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="14.0" layoutY="497.0" prefHeight="18.0" prefWidth="681.0" styleClass="code" text="&lt;Button layoutX=&quot;14.0&quot; layoutY=&quot;49.0&quot; mnemonicParsing=&quot;false&quot; styleClass=&quot;btn-de&quot; text=&quot;Standart button&quot; /&gt;" wrapText="true" />
+                        <PasswordField layoutX="14.0" layoutY="456.0" prefHeight="29.0" prefWidth="199.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </content>
+    </Tab>
+      <Tab text="Forms">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="40.0" prefHeight="29.0" prefWidth="201.0" promptText="Meteor564" />
+                  <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 17;" text="Username">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="75.0" style="-fx-font-size: 17;" text="Password">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <PasswordField layoutX="14.0" layoutY="101.0" prefHeight="29.0" prefWidth="199.0" />
+                  <Button defaultButton="true" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Login" />
+                  <ProgressBar layoutX="251.0" layoutY="220.0" prefWidth="200.0" progress="0.83" />
+                  <ProgressIndicator layoutX="490.0" layoutY="199.0" />
+                  <VBox layoutX="586.0" layoutY="88.0" prefHeight="191.0" prefWidth="286.0">
+                     <children>
+                        <Label prefHeight="113.0" prefWidth="292.0" text="Navigation view" />
+                        <TreeView fx:id="NavigationView" editable="true" fixedCellSize="1.0" prefHeight="255.0" prefWidth="286.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Demo">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="715.0" fitWidth="1136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/demo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="321.0" layoutY="130.0" prefHeight="379.0" prefWidth="390.0" style="-fx-background-color: rgb(255, 255, 255, 0.7);">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" style="-fx-font-size: 18;" text="Server" />
+                        <TextField layoutX="14.0" layoutY="49.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Label layoutX="16.0" layoutY="149.0" style="-fx-font-size: 18;" text="User" />
+                        <TextField layoutX="16.0" layoutY="176.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Label layoutX="16.0" layoutY="213.0" style="-fx-font-size: 18;" text="Password" />
+                        <Label layoutX="14.0" layoutY="85.0" style="-fx-font-size: 18;" text="Database" />
+                        <TextField layoutX="14.0" layoutY="112.0" prefHeight="29.0" prefWidth="360.0" />
+                        <PasswordField layoutX="14.0" layoutY="240.0" prefHeight="29.0" prefWidth="360.0" />
+                        <Button defaultButton="true" layoutX="13.0" layoutY="282.0" mnemonicParsing="false" styleClass="btn-de" text="Login" />
+                        <Line endX="256.0" layoutX="115.0" layoutY="336.0" startX="-100.0" />
+                        <Label layoutX="13.0" layoutY="346.0" text="Copiright Vanky EOOD 2019 C" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

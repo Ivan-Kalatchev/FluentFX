@@ -111,14 +111,14 @@
 */
 
 /* ListView */
- .list-view {
+/* .list-view {
     -fx-background-radius: 0;
-    -fx-background-color: #dad8d8;
+    -fx-background-color: red;
     -fx-border-width: 1;
     -fx-padding: 1;
-} /*
+} */
 
-.list-view .scroll-bar {
+/* .list-view .scroll-bar {
     -fx-background-insets: 0 -1 0 0;
 }
 
@@ -137,8 +137,8 @@
     -fx-border-color: #007ACC;
     -fx-padding: 0 0 1 0;
     -fx-background-insets: 1;
-}
-*/
+} */
+
 
 /* Button */
 .button {
@@ -426,7 +426,7 @@
 
 
 /* TreeView */
-.tree-view .scroll-bar {
+/* .tree-view .scroll-bar {
     -fx-background-insets: 0 -1 0 0;
 }
 
@@ -436,9 +436,9 @@
 
 .tree-view {
     -fx-background-insets: 2;
-    -fx-background-color: #1A1A1A;
+    -fx-background-color: #dad8d8;
     -fx-border-width: 1;
-    -fx-border-color: #222222;
+    -fx-border-color: gray;
     -fx-padding: 0 0 1 0;
 }
 
@@ -451,8 +451,8 @@
 }
 
 .tree-cell {
-    -fx-background-color: #1A1A1A;
-    -fx-text-fill: #AFB1B3;
+    -fx-background-color: #dad8d8;
+    -fx-text-fill: black;
     -fx-border-width: 0;
     -fx-pref-width: 20;
     -fx-pref-height: 20;
@@ -478,7 +478,7 @@
 
 .tree-cell:hover>.tree-disclosure-node>.arrow {
     -fx-background-color: #007ACC;
-}
+} */
 
 
 /* Tab */
