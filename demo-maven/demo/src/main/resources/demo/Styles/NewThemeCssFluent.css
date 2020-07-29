@@ -426,7 +426,7 @@
 
 
 /* TreeView */
-/* .tree-view .scroll-bar {
+.tree-view .scroll-bar {
     -fx-background-insets: 0 -1 0 0;
 }
 
@@ -436,49 +436,62 @@
 
 .tree-view {
     -fx-background-insets: 2;
-    -fx-background-color: #dad8d8;
-    -fx-border-width: 1;
-    -fx-border-color: gray;
-    -fx-padding: 0 0 1 0;
+    -fx-background-color: #f8f8f8;
+    -fx-border-width: 0;
+    -fx-padding: 0 0 0 0;
 }
 
+
 .tree-view:hover {
-    -fx-border-color: #3E3E40;
+    /* -fx-border-color: #3E3E40; */
 }
 
 .tree-view:focused {
-    -fx-border-color: #007ACC;
+    /* -fx-border-color: #007ACC; */
 }
 
 .tree-cell {
-    -fx-background-color: #dad8d8;
+    -fx-background-color: #f8f8f8;
     -fx-text-fill: black;
     -fx-border-width: 0;
-    -fx-pref-width: 20;
-    -fx-pref-height: 20;
+    -fx-pref-width: 35;
+    -fx-pref-height: 35;
     -fx-padding: 1;
     -fx-cursor: HAND;
+    -fx-font-size:15;
+    -fx-padding: 0 0 0 4;
 }
 
 .tree-cell:hover {
-    -fx-background-color: #3E3E40;
+    -fx-background-color: rgb(221, 221, 221);
+}
+.tree-cell:empty {
+    -fx-background-color: transparent !important;
+}
+.ikonli-font-icon {
+    -fx-icon-code: "mdi-account";
+    -fx-icon-color: black;
 }
 
 .tree-cell:selected {
-    -fx-background-color: #3E3E40;
+    /* -fx-background-color: rgb(189, 189, 189); */
+    -fx-border-width:4;
+    -fx-padding: 0 0 0 0;
+    -fx-border-color:transparent transparent transparent rgb(16, 110, 190);
+    -fx-border-style:solid none none solid;
 }
 
 .tree-cell:pressed {
-    -fx-background-color: #007ACC;
+    -fx-background-color: rgb(185, 185, 185);
 }
 
 .tree-cell>.tree-disclosure-node>.arrow {
-    -fx-background-color: #555555;
+    -fx-background-color: transparent;
 }
 
 .tree-cell:hover>.tree-disclosure-node>.arrow {
-    -fx-background-color: #007ACC;
-} */
+    -fx-background-color: transparent;
+}
 
 
 /* Tab */
