@@ -500,8 +500,16 @@
     -fx-background-color: white;
 }
 
-.tab-pane .tab-header-area {
-    -fx-background-color: #dbdbdb;
+.tab-header-area {
+    -fx-background-color: transparent !important;
+}
+
+.pivot .tab-header-area {
+    -fx-background-color: transparent !important;
+}
+
+.pivot .tab-header-area .tab-header-background {
+    -fx-background-color: transparent !important;
 }
 
 .tab {
@@ -514,6 +522,21 @@
 }
 
 .tab-pane .tab:hover {
+    -fx-background-color: #f7f7f7;
+}
+
+.pivot .tab {
+    -fx-background-insets: 0 1 0 1, 0, 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 4;
+}
+
+.pivot .tab:selected {
+    -fx-border-color: transparent transparent rgb(16, 110, 190) transparent;
+}
+
+.pivot .tab:hover {
     -fx-background-color: #f7f7f7;
 }
 

@@ -2,7 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -28,7 +31,20 @@
       </VBox>
       <Pane prefHeight="400.0" prefWidth="409.0">
          <children>
-            <Button layoutX="88.0" layoutY="60.0" mnemonicParsing="false" onAction="#WriteNE" text="Button" />
+            <TabPane layoutX="14.0" layoutY="14.0" prefHeight="358.0" prefWidth="355.0" styleClass="pivot" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Data 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab text="Data 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
          </children>
       </Pane>
    </children>
