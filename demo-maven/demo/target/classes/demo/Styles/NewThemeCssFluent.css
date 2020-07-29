@@ -457,7 +457,7 @@
     -fx-pref-width: 35;
     -fx-pref-height: 35;
     -fx-padding: 1;
-    -fx-cursor: HAND;
+    -fx-cursor: POINTER;
     -fx-font-size:15;
     -fx-padding: 0 0 0 4;
 }

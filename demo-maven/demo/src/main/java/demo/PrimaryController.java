@@ -61,4 +61,31 @@ public class PrimaryController {
         NavigationView.setRoot(rootItem);
         System.out.println("Raboti2");
     }
+
+    @FXML
+    protected void initialize() {
+        TreeItem rootItem = new TreeItem("Tutorials");
+
+        GlyphFont fontAwesome = GlyphFontRegistry.font("FontAwesome");
+
+        FontIcon aIcon = new FontIcon();
+
+        Ham1.setGraphic(fontAwesome.create(FontAwesome.Glyph.BARS));
+
+        TreeItem webItem = new TreeItem("Data");
+        webItem.setGraphic(fontAwesome.create(FontAwesome.Glyph.TABLE));
+        rootItem.getChildren().add(webItem);
+
+        TreeItem aItem = new TreeItem("Camera");
+        aItem.setGraphic(fontAwesome.create(FontAwesome.Glyph.CAMERA));
+
+        TreeItem javaItem = new TreeItem("Buttons");
+        javaItem.setGraphic(fontAwesome.create(FontAwesome.Glyph.BUILDING));
+
+        rootItem.getChildren().add(javaItem);
+        rootItem.getChildren().add(aItem);
+        System.out.println("Raboti");
+        NavigationView.setRoot(rootItem);
+        System.out.println("Raboti2");
+    }
 }

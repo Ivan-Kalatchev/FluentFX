@@ -20,7 +20,10 @@
                   </Button>
                </children>
             </HBox>
-            <TreeView fx:id="NavigationView" fixedCellSize="-2.0" minHeight="10.0" showRoot="false" />
+            <TreeView fx:id="NavigationView" fixedCellSize="-2.0" minHeight="10.0" showRoot="false">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></TreeView>
          </children>
       </VBox>
       <Pane prefHeight="400.0" prefWidth="409.0">
