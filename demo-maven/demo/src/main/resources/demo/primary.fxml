@@ -2,45 +2,46 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" styleClass="nav" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="191.0" style="-fx-background-color: #f8f8f8;">
+      <VBox fx:id="Nav" prefHeight="516.0" prefWidth="200.0" style="-fx-background-color: #f8f8f8;">
          <children>
-            <HBox prefHeight="37.0" prefWidth="193.0">
+            <HBox prefHeight="38.0" prefWidth="100.0">
                <children>
-                  <Button fx:id="Ham1" minWidth="51.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="38.0" styleClass="btn-gr">
+                  <Button fx:id="Ham1" minWidth="51.0" mnemonicParsing="false" onAction="#Collapse" prefHeight="32.0" prefWidth="38.0" styleClass="btn-gr">
                      <HBox.margin>
-                        <Insets top="3.0" />
+                        <Insets left="3.0" top="3.0" />
                      </HBox.margin>
                   </Button>
                </children>
             </HBox>
-            <TreeView fx:id="NavigationView" fixedCellSize="-2.0" prefHeight="474.0" prefWidth="191.0" showRoot="false">
-               <VBox.margin>
-                  <Insets top="5.0" />
-               </VBox.margin></TreeView>
+            <ListView fx:id="NavigationView2" accessibleRole="TREE_VIEW" prefHeight="480.0" prefWidth="100.0" styleClass="nav" />
          </children>
       </VBox>
-      <Pane prefHeight="400.0" prefWidth="409.0">
+      <Pane prefHeight="516.0" prefWidth="437.0">
          <children>
-            <TabPane layoutX="14.0" layoutY="14.0" prefHeight="358.0" prefWidth="355.0" styleClass="pivot" tabClosingPolicy="UNAVAILABLE">
+            <TabPane layoutX="10.0" layoutY="12.0" prefHeight="211.0" prefWidth="335.0" styleClass="pivot" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Data 1">
+                <Tab text="Users">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
-                <Tab text="Data 2">
+                <Tab text="Passwords">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="31.0" layoutY="50.0" mnemonicParsing="false" styleClass="btn-de" text="Button" />
+                           </children>
+                        </AnchorPane>
                   </content>
                 </Tab>
               </tabs>

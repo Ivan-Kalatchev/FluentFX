@@ -111,33 +111,52 @@
 */
 
 /* ListView */
-/* .list-view {
-    -fx-background-radius: 0;
-    -fx-background-color: red;
-    -fx-border-width: 1;
-    -fx-padding: 1;
-} */
-
-/* .list-view .scroll-bar {
-    -fx-background-insets: 0 -1 0 0;
+.list-view {
+    -fx-background-color: #f8f8f8;
+    -fx-border-width: 0;
 }
 
-.list-view .scroll-bar .thumb {
-    -fx-background-insets: 0 3 0 2;
+.nav .scroll-bar {
+    -fx-pref-height:0 !important;
 }
 
-.list-view:hover {
-    -fx-border-color: #3E3E40;
-    -fx-padding: 0;
-    -fx-background-insets: 1 1 0 1;
+.list-cell {
+    -fx-background-color: #f8f8f8;
+    /* -fx-text-fill: black; */
+    -fx-border-width: 0;
+    -fx-pref-height: 35;
+    /* -fx-padding: 10; */
+    -fx-cursor: POINTER;
+    -fx-font-size:15;
+    -fx-padding: 10;
 }
 
-.list-view:focused {
-    -fx-background-color: #1A1A1A;
-    -fx-border-color: #007ACC;
-    -fx-padding: 0 0 1 0;
-    -fx-background-insets: 1;
-} */
+.list-cell > .label {
+    
+    /* -fx-background-color: red; */
+}
+
+.list-cell:hover {
+    -fx-background-color: rgb(221, 221, 221);
+}
+.list-cell:selected {
+    /* -fx-background-color: rgb(221, 221, 221); */
+}
+
+.list-cell:selected{
+    -fx-border-width:4;
+    -fx-padding: 6;
+    -fx-border-color:transparent transparent transparent rgb(16, 110, 190);
+    -fx-border-style:solid none none solid;
+}
+
+.list-cell:pressed {
+    -fx-background-color: rgb(185, 185, 185);
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent !important;
+}
 
 
 /* Button */
@@ -454,14 +473,20 @@
     -fx-background-color: #f8f8f8;
     -fx-text-fill: black;
     -fx-border-width: 0;
+    /* -fx-skin: "impl.fluentfx.styles.demo.CustomTreeCellSkin"; */
     -fx-pref-width: 35;
     -fx-pref-height: 35;
     -fx-padding: 1;
     -fx-cursor: POINTER;
     -fx-font-size:15;
-    -fx-padding: 0 0 0 4;
 }
 
+.tree-cell .label{
+    -fx-padding: 0 0 0 8;
+}
+.tree-cell .text {
+    -fx-background-color: red !important;
+}
 .tree-cell:hover {
     -fx-background-color: rgb(221, 221, 221);
 }
@@ -473,12 +498,15 @@
     -fx-icon-color: black;
 }
 
-.tree-cell:selected {
+.tree-cell:selected > .label {
+    -fx-padding: 0 0 0 4;
     /* -fx-background-color: rgb(189, 189, 189); */
     -fx-border-width:4;
-    -fx-padding: 0 0 0 0;
     -fx-border-color:transparent transparent transparent rgb(16, 110, 190);
     -fx-border-style:solid none none solid;
+}
+.tree-cell:selected {
+    /* -fx-padding: 0 0 0 0; */
 }
 
 .tree-cell:pressed {
@@ -529,7 +557,7 @@
     -fx-background-insets: 0 1 0 1, 0, 0;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-border-width: 4;
+    -fx-border-width: 3;
 }
 
 .pivot .tab:selected {
@@ -537,7 +565,7 @@
 }
 
 .pivot .tab:hover {
-    -fx-background-color: #f7f7f7;
+    -fx-background-color: transparent;
 }
 
 /*.tab .tab-close-button {
