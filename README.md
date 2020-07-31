@@ -20,6 +20,17 @@ Demo application I am workin on. Next commit going to create a navigation view h
 <img src="./demo-covid.PNG"/>
 Demo application for coronavirus statistics.
 
+### Working on
+
+*For the next commit
+
+
+<ul>
+<li>Input groups</li>
+<li>Fluent icon pack</li>
+<li>Fonts</li>
+</ul>
+
 MenuBar
 
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/menu.gif?raw=true)
