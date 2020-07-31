@@ -18,6 +18,7 @@
 Demo application I am workin on. Next commit I am going to create a navigation view helper. The navigation view styles are ready themselfs. The demo works with controlsfx for icons. The theme is evolving to a full library. You can run the demo by cloning the repo and "mvn install | mvn javafx:run" the demo folder in demo-maven.
 
 <img src="./demo-covid.PNG"/>
+<img src="./demo-2-covid.PNG"/>
 Demo application for coronavirus statistics.
 
 ### Working on
