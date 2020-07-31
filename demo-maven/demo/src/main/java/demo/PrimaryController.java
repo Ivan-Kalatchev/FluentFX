@@ -10,14 +10,13 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import org.controlsfx.glyphfont.FontAwesome;
 import org.controlsfx.glyphfont.Glyph;
 import org.controlsfx.glyphfont.GlyphFont;
 import org.controlsfx.glyphfont.GlyphFontRegistry;
 import org.kordamp.ikonli.javafx.FontIcon;
-
-import impl.fluentfx.styles.demo.CustomTreeCellSkin;
 
 public class PrimaryController {
 
@@ -38,6 +37,9 @@ public class PrimaryController {
 
     @FXML
     public VBox Nav;
+
+    @FXML
+    public javafx.scene.control.TableView Table1;
 
     @FXML
     public TreeView<TreeItem<String>> Settings;
@@ -76,14 +78,32 @@ public class PrimaryController {
         NavigationView2.getItems().add(a);
 
         Label files = new Label();
-        files.setText("Historical wethers");
+        files.setText("Stats");
         files.setGraphic(fontAwesome.create(FontAwesome.Glyph.LINE_CHART));
         NavigationView2.getItems().add(files);
 
         Label user = new Label();
-        user.setText("Favourites");
-        user.setGraphic(fontAwesome.create(FontAwesome.Glyph.STAR_ALT));
+        user.setText("Check person");
+        user.setGraphic(fontAwesome.create(FontAwesome.Glyph.SEARCH));
         NavigationView2.getItems().add(user);
+
+        TableColumn nameColumn = new TableColumn("Name");
+        nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+
+        TableColumn surnameColumn = new TableColumn("Surname");
+        surnameColumn.setCellValueFactory(new PropertyValueFactory<>("surname"));
+
+        Table1.getColumns().addAll(nameColumn, surnameColumn);
+        // Person person = new Person("John", "Doe");
+        Table1.getItems().add(new Person("Jhon", "Doe"));
+        Table1.getItems().add(new Person("Ivan", "Petrov"));
+        Table1.getItems().add(new Person("Petar", "Malinov"));
+        Table1.getItems().add(new Person("Kalin", "Goranov"));
+        Table1.getItems().add(new Person("Gosho", "Marinov"));
+        Table1.getItems().add(new Person("Cvetan", "Kirkov"));
+        Table1.getItems().add(new Person("Ivailo", "Kirchev"));
+        Table1.getItems().add(new Person("Nikolai", "Petrov"));
+        Table1.getItems().add(new Person("Nikola", "Radev"));
 
         // for (Object i : NavigationView2.getItems()) {
         //     ((Label)i).getParent().Text(((Label)i).getText());
@@ -139,3 +159,4 @@ public class PrimaryController {
         System.out.println(newValue);
     }
 }
+

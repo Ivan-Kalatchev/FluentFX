@@ -13,19 +13,21 @@
 
 ## FluentFX - Fluent design for javafx
 
-# NEW LOOK AND FEEL
+# Demo application
 
-<img src="./Experimental_look.png"/>
+Demo application I am workin on. Next commit going to create a navigation view helper. The navigation view styles are ready themselfs. The demo works with controlsfx for icons. The theme is evolving to a full library. You can run the demo by cloning the repo and "mvn javafx:run" the demo-maven folder.
 
-Simple css file for fluent design in javafx
-
-![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/Preview.gif?raw=true)
+<img src="./demo-covid.PNG"/>
+Demo application for coronavirus statistics.
 
 MenuBar
 
 ![Gif](https://github.com/Ivan-Kalatchev/FluentFX/blob/master/menu.gif?raw=true)
 
 ### What's new
-Experimental new look 
 
-Migrating to the web controls - https://developer.microsoft.com/en-us/fluentui#/controls/
+<ul>
+<li>Navigation view</li>
+<li>Data grid</li>
+<li>Demo application</li>
+</ul>

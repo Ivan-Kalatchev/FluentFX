@@ -2,51 +2,55 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" styleClass="nav" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
+<Pane fx:controller="demo.PrimaryController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox fx:id="Nav" prefHeight="516.0" prefWidth="200.0" style="-fx-background-color: #f8f8f8;">
+      <ImageView fitHeight="599.0" fitWidth="934.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/demo.jpg" />
+         </image>
+      </ImageView>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="789.0" styleClass="nav" stylesheets="@Styles/NewThemeCssFluent.css">
          <children>
-            <HBox prefHeight="38.0" prefWidth="100.0">
+            <VBox fx:id="Nav" prefHeight="516.0" prefWidth="200.0" style="-fx-background-color: #f8f8f8; -fx-opacity: 0.8;">
                <children>
-                  <Button fx:id="Ham1" minWidth="51.0" mnemonicParsing="false" onAction="#Collapse" prefHeight="32.0" prefWidth="38.0" styleClass="btn-gr">
-                     <HBox.margin>
-                        <Insets left="3.0" top="3.0" />
-                     </HBox.margin>
-                  </Button>
+                  <HBox prefHeight="38.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="Ham1" minWidth="51.0" mnemonicParsing="false" onAction="#Collapse" prefHeight="32.0" prefWidth="38.0" styleClass="btn-gr">
+                           <HBox.margin>
+                              <Insets left="3.0" top="3.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="NavigationView2" accessibleRole="TREE_VIEW" prefHeight="480.0" prefWidth="100.0" styleClass="nav" />
                </children>
-            </HBox>
-            <ListView fx:id="NavigationView2" accessibleRole="TREE_VIEW" prefHeight="480.0" prefWidth="100.0" styleClass="nav" />
+            </VBox>
+            <Pane prefHeight="516.0" prefWidth="591.0">
+               <children>
+                  <TableView fx:id="Table1" layoutX="41.0" layoutY="112.0" prefHeight="382.0" prefWidth="509.0" style="-fx-opacity: 0.7;" />
+                  <Label layoutX="174.0" layoutY="23.0" prefHeight="61.0" prefWidth="244.0" style="-fx-font-size: 25; -fx-text-fill: white;" text="Coronavirus Statistics">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="250.0" layoutY="73.0" prefHeight="23.0" prefWidth="91.0" style="-fx-font-size: 15; -fx-text-fill: white;" text="January 2020">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
-      </VBox>
-      <Pane prefHeight="516.0" prefWidth="437.0">
-         <children>
-            <TabPane layoutX="10.0" layoutY="12.0" prefHeight="211.0" prefWidth="335.0" styleClass="pivot" tabClosingPolicy="UNAVAILABLE">
-              <tabs>
-                <Tab text="Users">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </Tab>
-                <Tab text="Passwords">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <Button layoutX="31.0" layoutY="50.0" mnemonicParsing="false" styleClass="btn-de" text="Button" />
-                           </children>
-                        </AnchorPane>
-                  </content>
-                </Tab>
-              </tabs>
-            </TabPane>
-         </children>
-      </Pane>
+      </HBox>
    </children>
-</HBox>
+</Pane>
