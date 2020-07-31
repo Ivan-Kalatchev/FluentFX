@@ -19,6 +19,7 @@ Demo application I am workin on. Next commit I am going to create a navigation v
 
 <img src="./demo-covid.PNG"/>
 <img src="./demo-2-covid.PNG"/>
+<img src="./login-demo.png"/>
 Demo application for coronavirus statistics.
 
 ### Working on
