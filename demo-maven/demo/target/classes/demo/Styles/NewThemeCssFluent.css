@@ -558,6 +558,8 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-border-width: 3;
+    -fx-focus-color: transparent !important;
+    -fx-faint-focus-color: transparent !important;
 }
 
 .pivot .tab:selected {
@@ -1099,6 +1101,9 @@
     -fx-border-color: black;
 }
 
+.spl-de{
+    -fx-min-width:10px;
+}
 
 /* Command button */
 

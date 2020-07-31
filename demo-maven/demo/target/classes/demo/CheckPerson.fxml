@@ -1,28 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="591.0" style="-fx-background-color: white; -fx-opacity: 0.85;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="591.0" style="-fx-background-color: white; -fx-opacity: 0.85;" stylesheets="@Styles/NewThemeCssFluent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TableView layoutX="35.0" layoutY="146.0" prefHeight="348.0" prefWidth="522.0">
-        <columns>
-          <TableColumn prefWidth="114.39999008178711" text="First name" />
-          <TableColumn minWidth="0.0" prefWidth="406.8000030517578" text="Secound name" />
-        </columns>
-      </TableView>
-      <Pane layoutX="39.0" layoutY="22.0" prefHeight="116.0" prefWidth="514.0" style="-fx-background-color: white;">
+      <Pane layoutX="35.0" layoutY="11.0" prefHeight="147.0" prefWidth="514.0" style="-fx-background-color: white;">
          <children>
             <TextField layoutX="-3.0" layoutY="36.0" />
             <Label layoutX="-3.0" layoutY="10.0" style="-fx-font-size: 15;" text="First name" />
             <TextField layoutX="166.0" layoutY="36.0" />
             <Label layoutX="166.0" layoutY="10.0" style="-fx-font-size: 15;" text="Secound name" />
-            <Button defaultButton="true" layoutX="-3.0" layoutY="75.0" mnemonicParsing="false" text="Search" />
+            <Button defaultButton="true" layoutX="-4.0" layoutY="103.0" mnemonicParsing="false" text="Search" />
+            <CheckBox layoutX="-6.0" layoutY="70.0" mnemonicParsing="false" text="Is alive" />
+            <RadioButton layoutX="329.0" layoutY="41.0" mnemonicParsing="false" text="Male" />
+            <RadioButton layoutX="419.0" layoutY="41.0" mnemonicParsing="false" text="Female" />
+            <Label layoutX="329.0" layoutY="10.0" style="-fx-font-size: 15;" text="Gender" />
          </children>
       </Pane>
+      <TabPane layoutX="19.0" layoutY="152.0" prefHeight="312.0" prefWidth="547.0" styleClass="pivot" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Found results">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="547.0">
+                     <children>
+                        <TableView layoutX="12.0" layoutY="11.0" prefHeight="257.0" prefWidth="522.0">
+                          <columns>
+                            <TableColumn prefWidth="114.39999008178711" text="First name" />
+                            <TableColumn minWidth="0.0" prefWidth="406.8000030517578" text="Secound name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Alike people">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <MenuButton layoutX="26.0" layoutY="469.0" mnemonicParsing="false" styleClass="men-de" text="Save results as">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <SplitMenuButton layoutX="161.0" layoutY="470.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="136.0" styleClass="spl-de" text="Send by email">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
    </children>
 </Pane>
