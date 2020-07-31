@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:controller="demo.PrimaryController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
    <children>
       <ImageView fitHeight="599.0" fitWidth="934.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -35,7 +35,7 @@
                   <ListView fx:id="NavigationView2" accessibleRole="TREE_VIEW" prefHeight="480.0" prefWidth="100.0" styleClass="nav" />
                </children>
             </VBox>
-            <Pane prefHeight="516.0" prefWidth="591.0">
+            <Pane fx:id="Content" prefHeight="516.0" prefWidth="591.0">
                <children>
                   <TableView fx:id="Table1" layoutX="41.0" layoutY="112.0" prefHeight="382.0" prefWidth="509.0" style="-fx-opacity: 0.7;" />
                   <Label layoutX="174.0" layoutY="23.0" prefHeight="61.0" prefWidth="244.0" style="-fx-font-size: 25; -fx-text-fill: white;" text="Coronavirus Statistics">

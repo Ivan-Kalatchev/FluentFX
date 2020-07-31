@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <LineChart layoutX="46.0" layoutY="106.0" prefHeight="370.0" prefWidth="500.0" style="-fx-opacity: 0.8; -fx-background-color: white;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="209.0" layoutY="14.0" prefHeight="61.0" prefWidth="174.0" style="-fx-font-size: 25; -fx-text-fill: white;" text="Statistics screen">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="64.0" prefHeight="23.0" prefWidth="91.0" style="-fx-font-size: 15; -fx-text-fill: white;" text="January 2020">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

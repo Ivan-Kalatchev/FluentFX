@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="591.0" style="-fx-background-color: white; -fx-opacity: 0.85;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="35.0" layoutY="146.0" prefHeight="348.0" prefWidth="522.0">
+        <columns>
+          <TableColumn prefWidth="114.39999008178711" text="First name" />
+          <TableColumn minWidth="0.0" prefWidth="406.8000030517578" text="Secound name" />
+        </columns>
+      </TableView>
+      <Pane layoutX="39.0" layoutY="22.0" prefHeight="116.0" prefWidth="514.0" style="-fx-background-color: white;">
+         <children>
+            <TextField layoutX="-3.0" layoutY="36.0" />
+            <Label layoutX="-3.0" layoutY="10.0" style="-fx-font-size: 15;" text="First name" />
+            <TextField layoutX="166.0" layoutY="36.0" />
+            <Label layoutX="166.0" layoutY="10.0" style="-fx-font-size: 15;" text="Secound name" />
+            <Button defaultButton="true" layoutX="-3.0" layoutY="75.0" mnemonicParsing="false" text="Search" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

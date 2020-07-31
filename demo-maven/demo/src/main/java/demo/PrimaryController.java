@@ -4,7 +4,9 @@ import java.io.IOException;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
@@ -17,6 +19,8 @@ import org.controlsfx.glyphfont.Glyph;
 import org.controlsfx.glyphfont.GlyphFont;
 import org.controlsfx.glyphfont.GlyphFontRegistry;
 import org.kordamp.ikonli.javafx.FontIcon;
+
+import demo.Helpers.NavigationHelper;
 
 public class PrimaryController {
 
@@ -39,6 +43,9 @@ public class PrimaryController {
     public VBox Nav;
 
     @FXML
+    public Pane Content;
+
+    @FXML
     public javafx.scene.control.TableView Table1;
 
     @FXML
@@ -53,8 +60,8 @@ public class PrimaryController {
 
     @FXML
     private void WriteNE() throws IOException {
-        //System.out.println(AzNeZnam.getText());
-        //AzNeZnam.setText("NZZZZZZZZZZZZZ");
+        // System.out.println(AzNeZnam.getText());
+        // AzNeZnam.setText("NZZZZZZZZZZZZZ");
     }
 
     @FXML
@@ -106,7 +113,7 @@ public class PrimaryController {
         Table1.getItems().add(new Person("Nikola", "Radev"));
 
         // for (Object i : NavigationView2.getItems()) {
-        //     ((Label)i).getParent().Text(((Label)i).getText());
+        // ((Label)i).getParent().Text(((Label)i).getText());
         // }
 
         // TreeItem webItem = new TreeItem("Data");
@@ -125,7 +132,20 @@ public class PrimaryController {
         // NavigationView.setRoot(rootItem);
         // System.out.println("Raboti2");
 
-        NavigationView2.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> updateSelectedItem(newValue));
+        try {
+            NavigationView2.getSelectionModel().selectedItemProperty()
+                    .addListener((observable, oldValue, newValue) -> {
+                        try {
+                            updateSelectedItem(newValue);
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+                    });
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -155,8 +175,26 @@ public class PrimaryController {
         }
     }
 
-    private void updateSelectedItem(Object newValue) {      
+    private void updateSelectedItem(Object newValue) throws IOException {
+        //NavigationHelper.RequestNavigation(Content, newValue.toString());
+        RequestNavigation(Content, ((Label)newValue).getText());
         System.out.println(newValue);
+    }
+
+    public void RequestNavigation(Pane Content, String To) throws IOException {
+
+        StringBuilder FinalScreen = new StringBuilder();
+        if(To.contains(" ")){
+            for (String CurrentWord : To.split(" ")) {
+                String crr = CurrentWord;
+                crr = crr.replaceFirst(crr.split("")[0], crr.split("")[0].toUpperCase());
+                FinalScreen.append(crr);
+            }
+        } else {FinalScreen.append(To);}
+        Content.getChildren().clear();
+        Pane NewFXMLParent =  FXMLLoader.load(getClass().getResource(FinalScreen.toString() +  ".fxml"));
+        Content.getChildren().add(NewFXMLParent);
+
     }
 }
 
