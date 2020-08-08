@@ -11,7 +11,7 @@
     </a>
 </p>
 
-## FluentFX - Fluent design for javafx
+## FluentFX - Fluent design for javafx *STILL WORK IN PROGRESS*
 
 # Demo application
 
