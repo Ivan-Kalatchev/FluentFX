@@ -3,6 +3,8 @@
 <?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.PasswordField?>
@@ -53,11 +55,11 @@
                               <Font size="59.0" />
                            </font>
                         </Label>
-                        <Button layoutX="15.0" layoutY="454.0" minWidth="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="42.0" styleClass="btn-gr">
+                        <Button layoutX="15.0" layoutY="454.0" minWidth="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="55.0" styleClass="btn-gr">
                            <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="7.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@open.png" />
+                                    <Image url="@logo.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -208,6 +210,15 @@
                               </Pane>
                            </graphic>
                         </Button>
+                        <Button layoutX="105.0" layoutY="454.0" minWidth="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="55.0" styleClass="com-btn">
+                           <graphic>
+                              <ImageView fitHeight="7.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
                      </children>
                   </AnchorPane>
               </content>
@@ -276,6 +287,25 @@
                   <Button defaultButton="true" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" text="Login" />
                   <ProgressBar layoutX="251.0" layoutY="220.0" prefWidth="200.0" progress="0.83" />
                   <ProgressIndicator layoutX="490.0" layoutY="199.0" />
+                  <MenuBar layoutX="74.0" layoutY="259.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
                </children>
             </AnchorPane>
          </content>

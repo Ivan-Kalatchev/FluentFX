@@ -354,47 +354,6 @@
     -fx-cursor: HAND;
 }
 
-
-/* Menu */
-.menu-bar {
-    -fx-background-color: white;
-    -fx-border-width: 0;
-}
-
-.menu-bar .menu-button {
-    -fx-background: #c7c7c7;
-    -fx-text-fill: #000000;
-    -fx-font-size: 15 pt;
-}
-
-.menu-item {
-    -fx-background-radius: 0;
-    -fx-padding: 0em 0em 0em 0em;
-    -fx-text-fill: black;
-    -fx-background: #c7c7c7;
-}
-
-.menu-item .label {
-    -fx-font-size: 16 pt;
-    -fx-text-fill: black;
-}
-
-.menu-item:hover {
-    -fx-background-color: #c7c7c7;
-}
-
-.menu-item:pressed {
-}
-
-.context-menu {
-    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
-    -fx-background-color: #e7e7e7;
-    -fx-border-width: 0.2px;
-    -fx-border-radius: 5;
-    -fx-border-color: black;
-}
-
-
 /* ProgressBar */
 .progress-bar {
     -fx-border-radius: 3;
@@ -558,6 +517,8 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-border-width: 3;
+    -fx-focus-color: transparent !important;
+    -fx-faint-focus-color: transparent !important;
 }
 
 .pivot .tab:selected {
@@ -1099,6 +1060,9 @@
     -fx-border-color: black;
 }
 
+.spl-de{
+    -fx-min-width:10px;
+}
 
 /* Command button */
 
@@ -1164,6 +1128,8 @@
     -fx-scale-x: 0.98;
 }
 
+/* Group button */
+
 .btn-gr{
 
     -fx-background-color:  transparent;
@@ -1190,6 +1156,8 @@
     -fx-border-color:black !important;
 }
 
+/* Code */
+
 .code .content{
     -fx-background-color: rgb(54, 54, 54) !important;
     -fx-text-fill: white !important;
@@ -1197,4 +1165,80 @@
 
 .code{
     -fx-text-fill: white !important;
+}
+/* NavigationView */
+
+.nav-view{
+    -fx-background-color: #f8f8f8;
+    -fx-opacity: 0.8;
+}
+
+.nav-view > .h-box {
+    -fx-background-color: #f8f8f8;
+}
+
+/* Menu */
+
+.menu-bar {
+-fx-background-color: white !important;
+}
+
+.menu-bar .menu-button{
+-fx-background: #c7c7c7 !important;
+-fx-border-style:none;
+}
+
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing {
+-fx-background: #c7c7c7 !important;
+}
+.menu-bar .label {
+-fx-font-size: 16 pt !important;
+}
+.menu-item {
+-fx-padding: 0em 0em 0em 0em !important;
+-fx-text-fill: black !important;
+-fx-background: #c7c7c7 !important;
+}
+.menu-item .label {
+-fx-font-size: 16 pt !important;
+-fx-text-fill: black !important;
+}
+/* .menu-bar {
+    -fx-background-color: white;
+    -fx-border-width: 0;
+}
+
+.menu-bar .menu-button {
+    -fx-background: #c7c7c7;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15 pt;
+}
+
+.menu-item {
+    -fx-background-radius: 0;
+    -fx-padding: 0em 0em 0em 0em;
+    -fx-text-fill: black;
+    -fx-background: #c7c7c7;
+} */
+
+/* .menu-item .label {
+    -fx-font-size: 16 pt;
+    -fx-text-fill: black;
+}
+
+.menu-item:hover {
+    -fx-background-color: #c7c7c7;
+}
+
+.menu-item:pressed {
+} */
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #e7e7e7;
+    -fx-border-width: 0.2px;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
 }

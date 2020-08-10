@@ -9,10 +9,19 @@ import javafx.scene.layout.*;
 
 public class NavigationHelper {
 
-    public static void RequestNavigation(Pane Content, String To) throws IOException {
+    public void RequestNavigation(Pane Content, String To) throws IOException {
 
-        //Pane NewFXMLParent =  FXMLLoader.load(getClass().getResource(To + ".fxml"));
-        //Content.getChildren().add(NewFXMLParent);
+        StringBuilder FinalScreen = new StringBuilder();
+        if(To.contains(" ")){
+            for (String CurrentWord : To.split(" ")) {
+                String crr = CurrentWord;
+                crr = crr.replaceFirst(crr.split("")[0], crr.split("")[0].toUpperCase());
+                FinalScreen.append(crr);
+            }
+        } else {FinalScreen.append(To);}
+        Content.getChildren().clear();
+        Pane NewFXMLParent =  FXMLLoader.load(getClass().getResource(FinalScreen.toString() +  ".fxml"));
+        Content.getChildren().add(NewFXMLParent);
 
     }
 

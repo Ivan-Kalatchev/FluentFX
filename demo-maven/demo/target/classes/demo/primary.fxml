@@ -27,7 +27,7 @@
                      <children>
                         <Button fx:id="Ham1" minWidth="51.0" mnemonicParsing="false" onAction="#Collapse" prefHeight="32.0" prefWidth="38.0" styleClass="btn-gr">
                            <HBox.margin>
-                              <Insets left="3.0" top="3.0" />
+                              <Insets top="3.0" />
                            </HBox.margin>
                         </Button>
                      </children>

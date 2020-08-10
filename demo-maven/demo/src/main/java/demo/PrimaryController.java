@@ -21,6 +21,8 @@ import org.controlsfx.glyphfont.GlyphFontRegistry;
 import org.kordamp.ikonli.javafx.FontIcon;
 
 import demo.Helpers.NavigationHelper;
+import demo.fluentIconsFX.main.java.com.kalatchev.fonts.fluent.FluentIcon;
+import demo.fluentIconsFX.main.java.com.kalatchev.fonts.fluent.FluentIconView;
 
 public class PrimaryController {
 
@@ -67,26 +69,35 @@ public class PrimaryController {
     @FXML
     protected void initialize() {
 
+        FluentIconView HamburgerIcon = new FluentIconView();
+        HamburgerIcon.setIcon(FluentIcon.GlobalNavigationButton);
+
         TreeItem rootItem = new TreeItem("Tutorials");
 
         GlyphFont fontAwesome = GlyphFontRegistry.font("FontAwesome");
 
         FontIcon aIcon = new FontIcon();
 
-        Ham1.setGraphic(fontAwesome.create(FontAwesome.Glyph.BARS));
+        Ham1.setGraphic(new Label(HamburgerIcon.getText()));
+        //Ham1.setText(HamburgerIcon.getText());
+        Ham1.setStyle("-fx-font-family: \"Segoe MDL2 Assets\";");
 
         // TreeItem settings = new TreeItem("Settings");
         // settings.setGraphic(fontAwesome.create(FontAwesome.Glyph.GEAR));
         // Settings.setRoot(settings);
-
+        NavigationView2.setStyle("-fx-font-family: \"Segoe MDL2 Assets\";");
         Label a = new Label();
-        a.setText("Home");
-        a.setGraphic(fontAwesome.create(FontAwesome.Glyph.HOME));
+        a.setText("a");
+        a.setGraphic(HamburgerIcon);
+        //a.setStyle("-fx-font-family: \"Segoe MDL2 Assets\";");
         NavigationView2.getItems().add(a);
 
+        FluentIconView Mail = new FluentIconView();
+        Mail.setIcon(FluentIcon.Cloud);
         Label files = new Label();
-        files.setText("Stats");
-        files.setGraphic(fontAwesome.create(FontAwesome.Glyph.LINE_CHART));
+        files.setText("Open");
+        files.setGraphic(Mail);
+        //files.setStyle("-fx-font-family: \"Segoe MDL2 Assets\";");
         NavigationView2.getItems().add(files);
 
         Label user = new Label();
