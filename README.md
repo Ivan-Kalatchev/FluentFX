@@ -6,9 +6,6 @@
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
     </a>
-    <a href="LICENSE">
-      <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
-    </a>
 </p>
 
 ## FluentFX - Fluent design for javafx *STILL WORK IN PROGRESS*
