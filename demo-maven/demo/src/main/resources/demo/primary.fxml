@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import demo.Components.ContentButton.ContentButton?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.PrimaryController">
    <children>
@@ -48,6 +49,7 @@
                         <Font size="51.0" />
                      </font>
                   </Label>
+                  <ContentButton prefHeight="23.0" prefWidth="91.0"/>
                </children>
             </Pane>
          </children>
